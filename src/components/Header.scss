@@ -1,0 +1,33 @@
+.header {
+    padding-top: 165px;
+    padding-bottom: 500px;
+    position: relative;
+    background-image: url("./img/headerBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-title {
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+    }
+
+    &-subtitle {
+        margin-top: 18px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        color: #000000;
+    }
+
+    &-pizza {
+        position: absolute;
+        bottom: -130px;
+        left: 50%;
+        transform: translateX(-50%);
+        img {
+            object-fit: fill;
+        }
+    }
+}
