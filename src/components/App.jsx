@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import "./App.scss";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Container from './Container.jsx';
 import Navigation from './Navigation.jsx';
 import HomePage from './page/HomePage'
 
