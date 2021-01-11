@@ -1,10 +1,9 @@
 import React, { Fragment, useState } from 'react';
 import "./App.scss";
-import {BrowserRouter as Router} from 'react-router-dom'
-import Header from './Header.jsx';
-import pizzaImg from "./img/pizza.png";
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Container from './Container.jsx';
 import Navigation from './Navigation.jsx';
+import HomePage from './page/HomePage'
 
 const App = () => {
     const [headerLink] = useState(
@@ -27,14 +26,9 @@ const App = () => {
         <Router>
             <Fragment>
                 <Navigation linkData={headerLink} tel="0800330898" daily="Daily 11am - 9pm"/>
-                <Header 
-                    pizzaImg={pizzaImg} 
-                    title={`Food delivery in Kovel`} 
-                    subTitle={<span>
-                        If you decide to relax or have unexpected guests, 
-                        call us. We make <br/> sure that your vacation is comfortable, 
-                        enjoyable and delicious
-                    </span>}/>
+                <Switch>
+                    <Route path="/home/" exact component={HomePage}/>
+                </Switch>
             </Fragment>
         </Router>
     );

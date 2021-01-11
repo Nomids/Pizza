@@ -4,7 +4,7 @@ import logo from '../logo.png'
 
 const Logo = () => {
     return (
-        <Link to="/">
+        <Link to="/home">
             <img src={logo} alt="Classic Pizza Logo"/>
         </Link>
     );

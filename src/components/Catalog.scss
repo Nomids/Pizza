@@ -1,0 +1,22 @@
+.catalog {
+    padding-top: 187px;
+    padding-bottom: 40px;
+
+    &-lists {
+        width: 830px;
+        margin: 0 auto;
+        margin-top: 49px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            font-weight: 600;
+            font-size: 16px;
+            padding: 17px 45px;
+            background: linear-gradient(0deg, #ECEEF6, #ECEEF6), #59AAF1;
+            border-radius: 45px;
+            color: #000;
+        }
+    }
+}
