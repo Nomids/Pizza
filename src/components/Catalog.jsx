@@ -38,7 +38,7 @@ const Catalog = () => {
     const renderList = () => {
         return listName.map(({text, to}, id) => {
             return (
-                <Link to={to} key={id } className="catalog-lists__item">
+                <Link to={to} key={id} className="catalog-lists__item">
                    {text}             
                 </Link>
             )
@@ -46,9 +46,9 @@ const Catalog = () => {
     }
 
     const renderRoute = () => {
-        return listName.map(({to, itemBlockData})=>{
+        return listName.map(({to, itemBlockData}, id)=>{
             return (
-                <Route path={to} exact render={() => (<CatalogBlock itemData={itemBlockData}/>)}/>
+                <Route path={to} key={id} exact render={() => (<CatalogBlock itemData={itemBlockData}/>)}/>
             )
         })
     }

@@ -5,9 +5,9 @@ import "./CatalogBlock.scss"
 const CatalogBlock = ({itemData}) => {
 
     const renderItem = () => {
-        return itemData.map((item) => {
+        return itemData.map((item, id) => {
             return (
-                <Card {...item}/>
+                <Card key={id} {...item}/>
             )
         })
     }
